@@ -21,3 +21,19 @@ The system will be an internal package and inventory management system that will
 3. Package Service:
 - For the packages being consigned
 
+## Services
+
+### Consignment Service
+
+This service will be able to add a consignment to a list of consignments.
+
+The consignment service will also be able to tell whether the current consignment has been created.
+
+#### Methods
+
+CreateConsignment()
+- Currently, creates a new consignment based on the file `consignment.json`
+-- This is based on the proto file and its defined values
+
+GetConsignment()
+- Currently, gets and prints to the console the current list of consignments

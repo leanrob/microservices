@@ -48,6 +48,7 @@ func main() {
 		log.Fatalf("Could not parse file: %v", err)
 	}
 
+	// Create the consignment held in our sample JSON file
 	r, err := client.CreateConsignment(context.Background(), consignment)
 	if err != nil {
 		log.Fatalf("Could not greet: %v", err)
@@ -55,6 +56,7 @@ func main() {
 
 	log.Printf("Created: %t", r.Created)
 
+	// GetAll and print all the consignments in the system currently
 	getAll, err := client.GetConsignments(context.Background(), &pb.GetRequest{})
 	if err != nil {
 		log.Fatalf("Could not list consignments: %v", err)
