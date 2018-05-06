@@ -9,3 +9,15 @@ The following technologies are currently being explored in this repository...
 - go-micro
 - Docker
 - Kubernetes
+
+## Current microservices planned
+
+The system will be an internal package and inventory management system that will include...
+
+1. Consignment Service: 
+- For consigning the package to be transferred
+2. User Service:
+- For user related actions
+3. Package Service:
+- For the packages being consigned
+
